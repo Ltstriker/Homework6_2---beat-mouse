@@ -1,0 +1,349 @@
+
+body
+{
+}
+
+#container
+{
+  position: relative;
+  overflow: hidden;
+  height: 640px;
+  width: 960px;
+  top: 30px;
+  margin: 0 auto;
+}
+
+#mouse_container
+{
+  position: absolute;
+  overflow: hidden;
+  height: 540px;
+  width: 960px;
+}
+
+#end
+{
+  position: absolute;
+  height: 540px;
+  width: 960px;
+  border-radius: 7%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition-duration: 0.3s;
+}
+
+
+.end_in
+{
+  z-index: 0;
+}
+
+.end_out
+{
+  z-index: 99;
+}
+
+#bar
+{
+  z-index: 99;
+  position: absolute;
+  font-size: 72pt;
+  color: rgba(255,200,0,0.9);
+  top: 200px;
+  height:200px;
+  width: 500px;
+  transition-duration: 1s;
+}
+
+.bar_in
+{
+  left: 960px;
+}
+
+.bar_out
+{
+  left: 230px;
+}
+
+
+#time
+{
+  position: absolute;
+  top: 25px;
+  left:720px;
+  font-size: 30pt;
+  width: 100px;
+  font-weight: bold;
+  z-index: 90;
+}
+
+#score
+{
+  position: absolute;
+  top: 25px;
+  left:290px;
+  font-size: 30pt;
+  width: 100px;
+  font-weight: bold;
+  z-index: 90;
+}
+
+#button
+{
+  position: absolute;
+  height: 80px;
+  width: 180px;
+  font-family: monospace;
+  font-size: 50pt;
+  top:550px;
+  left: 400px;
+}
+#background
+{
+  position: absolute;
+  height: 540px;
+  width: 960px;
+  z-index: 10;
+}
+
+#hole1
+{
+  position: absolute;
+  top: 0px;
+  height: 300px;
+  width: 960px;
+  z-index: 5;
+}
+#hole2
+{
+  position: absolute;
+  top: 300px;
+  height: 120px;
+  width: 960px;
+  z-index: 17;
+}
+#hole3
+{
+  position: absolute;
+  top: 390px;
+  height: 120px;
+  width: 960px;
+  z-index: 23;
+}
+
+#mouse1
+{
+  position: absolute;
+  left: 36px;
+  height: 200px;
+  width: 200px;
+  z-index: 15;
+  transition-duration: 1s;
+}
+
+#mouse2
+{
+  position: absolute;
+  left: 215px;
+  height: 200px;
+  width: 200px;
+  z-index: 15;
+  transition-duration: 1s;
+}
+
+#mouse3
+{
+  position: absolute;
+  left: 395px;
+  height: 200px;
+  width: 200px;
+  z-index: 15;
+  transition-duration: 1s;
+}
+
+#mouse4
+{
+  position: absolute;
+  left: 570px;
+  height: 200px;
+  width: 200px;
+  z-index: 15;
+  transition-duration: 1s;
+}
+
+#mouse5
+{
+  position: absolute;
+  left: 735px;
+  height: 200px;
+  width: 200px;
+  z-index: 15;
+  transition-duration: 1s;
+}
+
+.mouse_down1
+{
+  top: 245px;
+}
+
+.mouse_up1
+{
+  top: 105px;
+}
+
+#mouse6
+{
+  position: absolute;
+  left: 36px;
+  height: 200px;
+  width: 200px;
+  z-index: 20;
+  transition-duration: 1s;
+}
+
+#mouse7
+{
+  position: absolute;
+  left: 215px;
+  height: 200px;
+  width: 200px;
+  z-index: 20;
+  transition-duration: 1s;
+}
+
+#mouse8
+{
+  position: absolute;
+  left: 395px;
+  height: 200px;
+  width: 200px;
+  z-index: 20;
+  transition-duration: 1s;
+}
+
+#mouse9
+{
+  position: absolute;
+  left: 570px;
+  height: 200px;
+  width: 200px;
+  z-index: 20;
+  transition-duration: 1s;
+}
+
+#mouse10
+{
+  position: absolute;
+  left: 735px;
+  height: 200px;
+  width: 200px;
+  z-index: 20;
+  transition-duration: 1s;
+}
+
+
+.mouse_down2
+{
+  top: 355px;
+}
+
+.mouse_up2
+{
+  top: 215px;
+}
+
+#mouse11
+{
+  position: absolute;
+  left: 36px;
+  height: 200px;
+  width: 200px;
+  z-index: 26;
+  transition-duration: 1s;
+}
+
+#mouse12
+{
+  position: absolute;
+  left: 215px;
+  height: 200px;
+  width: 200px;
+  z-index: 26;
+  transition-duration: 1s;
+}
+
+#mouse13
+{
+  position: absolute;
+  left: 395px;
+  height: 200px;
+  width: 200px;
+  z-index: 26;
+  transition-duration: 1s;
+}
+
+#mouse14
+{
+  position: absolute;
+  left: 570px;
+  height: 200px;
+  width: 200px;
+  z-index: 26;
+  transition-duration: 1s;
+}
+
+#mouse15
+{
+  position: absolute;
+  left: 735px;
+  height: 200px;
+  width: 200px;
+  z-index: 26;
+  transition-duration: 1s;
+}
+
+.mouse_down3
+{
+  top: 485px;
+}
+
+.mouse_up3
+{
+  top: 345px;
+}
+
+.mouse_img1
+{
+  background-image: url('img/mouse1-1.png');
+}
+
+.mouse_img2
+{
+  background-image: url('img/mouse1-2.png');
+}
+
+.mouse_img3
+{
+  background-image: url('img/mouse1-3.png');
+}
+
+#background2
+{
+  position: absolute;
+  top:224px;
+  width: 960px;
+  z-index: 18;
+}
+#background3
+{
+  position: absolute;
+  top:335px;
+  width: 960px;
+  z-index: 25;
+}
+#background4
+{
+  position: absolute;
+  top:457px;
+  width: 960px;
+  z-index: 30;
+}
