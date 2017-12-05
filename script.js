@@ -15,21 +15,10 @@ var stopping = false;
 window.onload = function()
 {
   document.getElementById('button').onclick = start;
-  document.getElementById('mouse1').onclick = function(){_beat(1)};
-  document.getElementById('mouse2').onclick = function(){_beat(2)};
-  document.getElementById('mouse3').onclick = function(){_beat(3)};
-  document.getElementById('mouse4').onclick = function(){_beat(4)};
-  document.getElementById('mouse5').onclick = function(){_beat(5)};
-  document.getElementById('mouse6').onclick = function(){_beat(6)};
-  document.getElementById('mouse7').onclick = function(){_beat(7)};
-  document.getElementById('mouse8').onclick = function(){_beat(8)};
-  document.getElementById('mouse9').onclick = function(){_beat(9)};
-  document.getElementById('mouse10').onclick = function(){_beat(10)};
-  document.getElementById('mouse11').onclick = function(){_beat(11)};
-  document.getElementById('mouse12').onclick = function(){_beat(12)};
-  document.getElementById('mouse13').onclick = function(){_beat(13)};
-  document.getElementById('mouse14').onclick = function(){_beat(14)};
-  document.getElementById('mouse15').onclick = function(){_beat(15)};
+  for(var c1=1;c1<=15;c1++)
+  {
+    $('#mouse'+c1.toString()).bind('click',c1,_beat);
+  }
 }
 
 function start()
@@ -110,8 +99,9 @@ function _in(temp)
     window.clearInterval(setInt_change[temp-1]);
 }
 
-function _beat(temp)
+function _beat(evnet)
 {
+  var temp = event.data;
   if(stopping ==true)
     return;
   if(state[temp-1]==3)
@@ -126,3 +116,5 @@ function _beat(temp)
   window.clearTimeout(setInt_in_delay[temp-1]);
   setInt_in_delay[temp-1]=window.setTimeout(_in,1500,temp);
 }
+
+//before 130
